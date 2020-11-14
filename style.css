@@ -105,6 +105,11 @@ nav {
     height: auto;
 }
 
+.offer-box img:hover {
+    width: 100%;
+    height: auto;
+}
+
 .offer-box h3 {
     text-transform: capitalize;
     font-size: 1.1rem;
