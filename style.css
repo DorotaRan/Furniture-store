@@ -1,0 +1,123 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    background-color: #e7e2dd;
+    position: fixed;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 100%;
+    width: 94%;
+    font-size: 24px;
+}
+
+.landing-page {
+    width: 100%;
+    height: auto;
+    background: url(./images/hero-bcg.jpeg) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    margin: 0 auto;
+    position: absolute;
+    width: 571px;
+    height: 200px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 30px;
+}
+
+.banner h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin: 3rem 0;
+}
+
+.banner button {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 15px;
+    background: #f09d51;
+    color: #222;
+    border: 1px solid #f09d51;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.our-products {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.our-products h2 {
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-size: 30px;
+    color: #222;
+    margin: 3rem;
+    font-weight: bold;
+}
+
+.offer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.offer-box {
+    width: 30%;
+    padding-bottom: 5%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    position: relative;
+}
+
+.offer-box:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.offer-box img {
+    width: 100%;
+    height: auto;
+}
+
+.offer-box h3 {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+.offer-box h4 {
+    margin-top: 0.7rem;
+    letter-spacing: 0.1rem;
+    color: #f09d51;
+    text-align: center;
+}
+
+
