@@ -11,7 +11,6 @@ nav {
     width: 100%;
     background-color: #e7e2dd;
     position: fixed;
-
 }
 
 .nav-container {
@@ -55,7 +54,7 @@ nav {
     margin: 3rem 0;
 }
 
-.landing-page-banner  button {
+.landing-page-banner p {
     padding: 10px 20px;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -148,7 +147,3 @@ nav {
     top: 200px;
     right: -22px;
 }
-
-
-
-
