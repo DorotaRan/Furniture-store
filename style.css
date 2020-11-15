@@ -11,6 +11,7 @@ nav {
     width: 100%;
     background-color: #e7e2dd;
     position: fixed;
+
 }
 
 .nav-container {
@@ -26,14 +27,17 @@ nav {
 
 .landing-page {
     width: 100%;
-    height: auto;
-    background: url(./images/hero-bcg.jpeg) center/cover no-repeat;
+    height: 950px;
+    background-image: url("./images/hero-bcg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.banner {
+.landing-page-banner {
     margin: 0 auto;
     position: absolute;
     width: 571px;
@@ -44,14 +48,14 @@ nav {
     padding: 30px;
 }
 
-.banner h1 {
+.landing-page-banner  h1 {
     font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     margin: 3rem 0;
 }
 
-.banner button {
+.landing-page-banner  button {
     padding: 10px 20px;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -78,7 +82,7 @@ nav {
     font-weight: bold;
 }
 
-.offer {
+.our-products-display {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -88,7 +92,7 @@ nav {
     text-align: center;
 }
 
-.offer-box {
+.our-products-display-box{
     width: 30%;
     padding-bottom: 5%;
     margin-right: 2%;
@@ -96,33 +100,55 @@ nav {
     position: relative;
 }
 
-.offer-box:nth-of-type(3n) {
+.our-products-display-box:nth-of-type(3n) {
     margin-right: 0;
 }
 
-.offer-box img {
+.our-products-display-box img {
     width: 100%;
     height: auto;
 }
 
-.offer-box img:hover {
-    width: 100%;
-    height: auto;
+.our-products-display-box img:hover {
+    transform: scale(1.1);
 }
 
-.offer-box h3 {
+.our-products-display-box h3 {
     text-transform: capitalize;
     font-size: 1.1rem;
     margin-top: 1rem;
     letter-spacing: 0.1rem;
     text-align: center;
+    font-weight: bold;
 }
 
-.offer-box h4 {
+.our-products-display-box h4 {
     margin-top: 0.7rem;
     letter-spacing: 0.1rem;
     color: #f09d51;
     text-align: center;
+    font-weight: bold;
 }
+
+.our-products-banner {
+    display: none;
+}
+
+.our-products-display-box:hover .our-products-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    height: 20px;
+    background-color: #f09d51;
+    padding: 10px;
+    color: #222;
+    position: absolute;
+    top: 200px;
+    right: -22px;
+}
+
+
 
 
