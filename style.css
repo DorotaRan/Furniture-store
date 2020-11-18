@@ -1,10 +1,10 @@
 body {
-  color: #222;
-  background: #ffffff;
   font-family: "Lato", sans-serif;
+  margin: 0 auto;
+  padding: 0;
 }
 
-.navbar {
+.nav-container {
   background: #ffffff;
   position: sticky;
   top: 0;
@@ -16,26 +16,26 @@ body {
   z-index: 1;
 }
 
-.navbar-center {
+.nav {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.5rem;
+  padding: 0 24px;
 }
 
 .nav-icon {
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 
-.cart-btn {
+.nav-cart-btn {
   position: relative;
   cursor: pointer;
 }
 
-.cart-items {
+.cart-items-counter {
   position: absolute;
   top: -8px;
   right: -8px;
@@ -45,7 +45,7 @@ body {
   color: #ffffff;
 }
 
-.hero {
+.landing-page {
   min-height: calc(100vh - 60px);
   background: url("./images/hero-bcg.jpeg") center/cover no-repeat;
   display: flex;
@@ -53,25 +53,25 @@ body {
   justify-content: center;
 }
 
-.banner {
+.landing-page-banner {
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
   display: inline-block;
-  padding: 2rem;
+  padding: 32px;
 }
 
-.banner-title {
-  font-size: 3.4rem;
+.landing-page-banner-title {
+  font-size: 54px;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  margin-bottom: 3rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 48px;
 }
 
 .banner-btn {
-  padding: 1rem 3rem;
+  padding: 16px 48px;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  font-size: 1rem;
+  letter-spacing: 1.5px;
+  font-size: 16px;
   background: #f09d51;
   color: #222;
   border: 1px solid #f09d51;
@@ -84,11 +84,11 @@ body {
   color: #f09d51;
 }
 
-.cart-overlay {
+.cart-container {
   position: fixed;
   top: 0;
   right: 0;
-  width: 100%;
+  width: 96%;
   height: 100%;
   transition: all 0.3s linear;
   background: rgb(240, 157, 81, 0.5);
@@ -100,13 +100,13 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  width: 100%;
+  width: 90%;
   height: 100%;
   overflow: scroll;
   background: #ffffff;
   z-index: 3;
   background: rgb(231, 226, 221);
-  padding: 1.5rem;
+  padding: 24px;
   transition: all 0.3s linear;
   transform: translateX(100%);
 }
@@ -127,23 +127,23 @@ body {
 }
 
 .close-cart {
-  font-size: 1.7rem;
+  font-size: 24px;
   cursor: pointer;
 }
 
 .cart h2 {
   text-transform: capitalize;
   text-align: center;
-  letter-spacing: 0.1rem;
-  margin-bottom: 2rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 32px;
 }
 
 .cart-item {
   display: grid;
   align-items: center;
   grid-template-columns: auto 1fr auto;
-  grid-column-gap: 1.5rem;
-  margin: 1.5rem 0;
+  grid-column-gap: 24px;
+  margin: 24px 0;
 }
 
 .cart-item img {
@@ -152,14 +152,14 @@ body {
 }
 
 .cart-item h4 {
-  font-size: 0.85rem;
+  font-size: 14px;
   text-transform: capitalize;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1.5px;
 }
 
 .cart-item h5 {
-  margin: 0.5rem 0;
-  letter-spacing: 0.1rem;
+  margin: 8px 0;
+  letter-spacing: 1.5px;
 }
 
 .item-amount {
@@ -178,36 +178,36 @@ body {
 }
 
 .cart-footer {
-  margin-top: 2rem;
-  letter-spacing: 0.1rem;
+  margin-top: 32px;
+  letter-spacing: 1.5px;
   text-align: center;
 }
 
 .cart-footer h3 {
   text-transform: capitalize;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
+}
+
+.products-container {
+  padding: 64px 0;
+}
+
+.products-container-title-section h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 60px;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
 }
 
 .products {
-  padding: 4rem 0;
-}
-
-.section-title h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 5rem;
-  text-transform: capitalize;
-  letter-spacing: 0.1rem;
-}
-
-.products-center {
   width: 90vw;
   margin: 0 auto;
   max-width: 1170px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-column-gap: 1.5rem;
-  grid-row-gap: 2rem;
+  grid-column-gap: 24px;
+  grid-row-gap: 32px;
 }
 
 .img-container {
@@ -222,8 +222,8 @@ body {
   background: #f09d51;
   border: none;
   text-transform: uppercase;
-  padding: 0.5rem 0.75rem;
-  letter-spacing: 0.1rem;
+  padding: 8px 12px;
+  letter-spacing: 1.5px;
   font-weight: bold;
   transition: all 0.3s linear;
   transform: translateX(101%);
@@ -235,7 +235,7 @@ body {
 }
 
 .fa-shopping-cart {
-  margin-right: 0.5rem;
+  margin-right: 8px;
 }
 
 .img-container:hover .bag-btn {
@@ -245,7 +245,7 @@ body {
 .product-img {
   display: block;
   width: 100%;
-  min-height: 12rem;
+  min-height: 192px;
   transition: all 0.3s linear;
 }
 
@@ -255,15 +255,27 @@ body {
 
 .product h3 {
   text-transform: capitalize;
-  font-size: 1.1rem;
-  margin-top: 1rem;
-  letter-spacing: 0.1rem;
+  font-size: 18px;
+  margin-top: 16px;
+  letter-spacing: 1.5px;
   text-align: center;
 }
 
 .product h4 {
-  margin-top: 0.7rem;
-  letter-spacing: 0.1rem;
+  margin-top: 11px;
+  letter-spacing: 1.5px;
   color: #f09d51;
   text-align: center;
+}
+
+footer {
+  background: #ffffff;
+  position: sticky;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: rgb(231, 226, 221);
+  z-index: 1;
 }
